@@ -9,7 +9,6 @@ function my_mail($str = null)
     $lastpoint = last_point($str);
     $newstr = "";
     if ($arr == null || $lastpoint == null || $lastpoint < $arr) {
-        echo "\n";
         exit;
     }
     for ($i = $arr + 1; $i < $lastpoint; $i++) {
@@ -40,4 +39,3 @@ function first_aro($str)
     }
     return $x;
 }
-my_mail("salut@.fefefe@@@...d.fr");
