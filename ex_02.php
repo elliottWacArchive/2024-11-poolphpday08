@@ -1,4 +1,5 @@
 <?php
+
 function my_round(float $nb)
 {
     $arr1 = round($nb);
