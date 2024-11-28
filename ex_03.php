@@ -40,4 +40,4 @@ function first_aro($str)
     }
     return $x;
 }
-// my_mail("salut@fefefe.fr");
+my_mail("salut@.fefefe@@@...d.fr");

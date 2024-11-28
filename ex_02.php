@@ -1,6 +1,6 @@
 <?php
 
-function my_round(float $nb)
+function my_rounds(float $nb)
 {
     $arr1 = round($nb);
     $arr2 = intval($nb + 1);
