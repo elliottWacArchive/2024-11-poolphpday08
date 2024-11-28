@@ -11,7 +11,6 @@ function count_char($str)
     }
     foreach ($arr as $key => $val) {
         for ($i = 0; $i < strlen($str); $i++) {
-            echo "$val : $key => " . $str[$i] . "\n";
             if ($str[$i] == $key) {
                 $arr[$key] += 1;
             }
