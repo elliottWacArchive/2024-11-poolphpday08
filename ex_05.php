@@ -1,6 +1,6 @@
 <?php
 
-function str_lower_epur(string $str = null)
+function str_lower_epur($str = null)
 {
     if (!is_string($str)) {
         return null;
