@@ -1,6 +1,6 @@
 <?php
 
-function print_calls()
+function return_calls()
 {
     static $call = 1;
     $val = null;
