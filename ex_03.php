@@ -2,19 +2,17 @@
 
 function my_mail($str = null)
 {
-    if (!is_string($str)) {
-        exit;
+    if (is_string($str)) {
+        $arr = first_aro($str);
+        $lastpoint = last_point($str);
+        $newstr = "";
+        if ($arr !== null && $lastpoint !== null && $lastpoint > $arr) {
+            for ($i = $arr + 1; $i < $lastpoint; $i++) {
+                $newstr = $newstr . $str[$i];
+            }
+            echo $newstr . "\n";
+        }
     }
-    $arr = first_aro($str);
-    $lastpoint = last_point($str);
-    $newstr = "";
-    if ($arr === null || $lastpoint === null || $lastpoint < $arr) {
-        exit;
-    }
-    for ($i = $arr + 1; $i < $lastpoint; $i++) {
-        $newstr = $newstr . $str[$i];
-    }
-    echo $newstr . "\n";
 }
 
 function last_point($str)
