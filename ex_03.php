@@ -8,7 +8,7 @@ function my_mail($str = null)
     $arr = first_aro($str);
     $lastpoint = last_point($str);
     $newstr = "";
-    if ($arr == null || $lastpoint == null || $lastpoint < $arr) {
+    if ($arr === null || $lastpoint === null || $lastpoint < $arr) {
         exit;
     }
     for ($i = $arr + 1; $i < $lastpoint; $i++) {

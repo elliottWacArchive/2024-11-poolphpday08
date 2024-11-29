@@ -16,5 +16,7 @@ function count_char($str)
             }
         }
     }
+    sort($arr);
     return $arr;
 }
+// var_dump(count_char("hello tt le monde!"));
